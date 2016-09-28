@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+    name="lmd.sitecontent"
+    interface="lmd.sitecontent.interfaces.ILmdSitecontentLayer"
+  />
+</layers>
