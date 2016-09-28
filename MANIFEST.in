@@ -1,0 +1,2 @@
+graft src/lmd
+include *.cfg *.rst *.in

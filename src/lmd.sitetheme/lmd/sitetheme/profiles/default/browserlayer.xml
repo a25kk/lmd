@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+    name="lmd.sitetheme"
+    interface="lmd.sitetheme.interfaces.ILmdSiteThemeLayer"
+  />
+</layers>
