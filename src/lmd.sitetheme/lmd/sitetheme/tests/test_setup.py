@@ -15,16 +15,16 @@ class TestInstall(IntegrationTestCase):
 
     def test_product_installed(self):
         """Test if lmd.buildout is installed with portal_quickinstaller."""
-        self.assertTrue(self.installer.isProductInstalled('lmd.buildout'))
+        self.assertTrue(self.installer.lmdroductInstalled('lmd.buildout'))
 
     def test_uninstall(self):
         """Test if lmd.buildout is cleanly uninstalled."""
         self.installer.uninstallProducts(['lmd.buildout'])
-        self.assertFalse(self.installer.isProductInstalled('lmd.buildout'))
+        self.assertFalse(self.installer.lmdroductInstalled('lmd.buildout'))
 
     # browserlayer.xml
     def test_browserlayer(self):
-        """Test that ILmdBuildoutLayer is registered."""
-        from lmd.buildout.interfaces import ILmdBuildoutLayer
+        """Test that IlmdBuildoutLayer is registered."""
+        from lmd.buildout.interfaces import IlmdBuildoutLayer
         from plone.browserlayer import utils
-        self.failUnless(ILmdBuildoutLayer in utils.registered_layers())
+        self.failUnless(IlmdBuildoutLayer in utils.registered_layers())

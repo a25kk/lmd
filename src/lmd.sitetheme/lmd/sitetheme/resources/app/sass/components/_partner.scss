@@ -1,0 +1,30 @@
+.app-partner-cards-wrapper {
+	background: #f0f0f0;
+	padding: 2rem;
+}
+
+.app-partner-cards {
+	@extend .container;
+}
+
+.partner-card {
+	min-height: 200px;
+	//border: 1px solid $app-gray-dark;
+}
+
+.partner-card-dl {
+	background: #fff url("../assets/img/logo-dl.jpg") no-repeat scroll center center;
+}
+
+.partner-card-elkb {
+	background: #fff;
+	padding: 4rem 2rem 0 2rem;
+}
+
+.partner-card-elda {
+	background: #fff url("../assets/img/logo-elda.png") no-repeat scroll center center;
+}
+
+.partner-card-vivaxx {
+	background: #fff url("../assets/img/logo-vivaxx.png") no-repeat scroll center center;
+}

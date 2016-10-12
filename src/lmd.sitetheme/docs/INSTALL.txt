@@ -1,7 +1,7 @@
 {{{ package.namespace }}}.sitetheme Installation
 -----------------------
 
-To install {{{ package.namespace }}}.sitetheme into the global Python environment
+To install {{{ package.namespace }}}.sitetheme into the global Python environlmdt
 (or a workingenv), using a traditional Zope 2 instance, you can do this:
 
 * When you're reading this you have probably already run

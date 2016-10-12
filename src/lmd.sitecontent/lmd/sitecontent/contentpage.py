@@ -4,7 +4,7 @@
 from plone.dexterity.content import Container
 from plone.supermodel import model
 from plone.namedfile.interfaces import IImageScaleTraversable
-from zope.interface import implelmdter
+from zope.interface import implementer
 
 
 class IContentPage(model.Schema, IImageScaleTraversable):
@@ -13,6 +13,6 @@ class IContentPage(model.Schema, IImageScaleTraversable):
     """
 
 
-@implelmdter(IContentPage)
+@implementer(IContentPage)
 class ContentPage(Container):
     pass

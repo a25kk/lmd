@@ -4,7 +4,7 @@
 from plone.dexterity.content import Container
 from plone.supermodel import model
 from plone.namedfile.interfaces import IImageScaleTraversable
-from zope.interface import implelmdter
+from zope.interface import implementer
 
 
 class ISectionFolder(model.Schema, IImageScaleTraversable):
@@ -13,6 +13,6 @@ class ISectionFolder(model.Schema, IImageScaleTraversable):
     """
 
 
-@implelmdter(ISectionFolder)
+@implementer(ISectionFolder)
 class SectionFolder(Container):
     pass

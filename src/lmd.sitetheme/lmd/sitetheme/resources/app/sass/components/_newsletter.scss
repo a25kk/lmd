@@ -1,0 +1,52 @@
+//
+// Newsletter
+// -----------------------------------------
+
+.app-newsletterbar {
+	//@extend .container;
+	margin-bottom: $spacer * 2;
+	margin-top: $spacer * 2;
+
+	.form-control {
+		border: 0;
+		border-radius: 0;
+	}
+
+	.input-group-addon {
+		background: $app-primary;
+		color: #fff;
+		border: 0;
+	}
+}
+
+.app-newsletter {
+	background: $app-gray;
+	padding: $spacer * 2;
+}
+
+.app-newsletter-item {
+	display: flex;
+	width: 100%;
+}
+
+.app-newsletter-item-content-left {
+	flex: 0 0 66.6666%;
+}
+
+.app-newsletter-item-content-right {
+	flex: 0 0 33.3333%;
+	padding-left: 1rem;
+	.input-group-addon {
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.5;
+		text-align: center;
+		color: #fff;
+		border: 0;
+		background-color: $app-primary;
+		width: 100% !important;
+		display: block;
+	}
+}
+
+

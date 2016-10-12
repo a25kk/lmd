@@ -18,14 +18,14 @@ long_description = \
 setup(
     name='lmd.sitetheme',
     version='1.0.0',
-    description="Plone Site Landmetzgerei Dichtl",
+    description="lmd plone buildout",
     long_description=long_description,
     # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         "Framework :: Plone",
         "Programming Language :: Python",
     ],
-    keywords='Landmetzgerei Dichtl Plone KK',
+    keywords='lmd kk plone',
     author='Serge Davidov',
     author_email='sd@ade25.de',
     url='http://pypi.python.org/pypi/lmd.buildout',

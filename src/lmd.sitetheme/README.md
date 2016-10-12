@@ -13,7 +13,7 @@ a Plone site theme.
 
 This package provides a Diazo Plone theme as an installable Python egg package.
 The generated Python package hold the necessary scaffold to kickstart theme
-development.
+developlmdt.
 
 In order to get productive you still need to generate a theme
 

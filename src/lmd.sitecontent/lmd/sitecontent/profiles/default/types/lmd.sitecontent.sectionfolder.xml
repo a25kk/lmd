@@ -12,7 +12,7 @@
   <property name="global_allow">True</property>
   <property name="filter_content_types">True</property>
   <property name="allowed_content_types">
-    <elelmdt value="lmd.sitecontent.contentpage" />
+    <element value="lmd.sitecontent.contentpage" />
   </property>
   <property name="allow_discussion">True</property>
 
@@ -21,9 +21,9 @@
   <property name="klass">lmd.sitecontent.sectionfolder.SectionFolder</property>
 
   <property name="behaviors">
-     <elelmdt value="plone.app.content.interfaces.INameFromTitle" />
-     <elelmdt value="plone.app.dexterity.behaviors.metadata.IBasic"/>
-     <elelmdt value="plone.app.contenttypes.behaviors.richtext.IRichText" />
+     <element value="plone.app.content.interfaces.INameFromTitle" />
+     <element value="plone.app.dexterity.behaviors.metadata.IBasic"/>
+     <element value="plone.app.contenttypes.behaviors.richtext.IRichText" />
    </property>
 
   <!-- View information -->
@@ -31,7 +31,7 @@
   <property name="immediate_view">view</property>
   <property name="default_view">sectionfolder-view</property>
   <property name="view_methods">
-   <elelmdt value="sectionfolder-view"/>
+   <element value="sectionfolder-view"/>
   </property>
   <property name="default_view_fallback">False</property>
   <property name="add_permission">cmf.AddPortalContent</property>

@@ -15,7 +15,7 @@ from plone.testing import z2
 import unittest2 as unittest
 
 
-class LmdSiteThemeLayer(PloneSandboxLayer):
+class lmdSiteThemeLayer(PloneSandboxLayer):
 
     defaultBases = (PLONE_FIXTURE,)
 
@@ -46,11 +46,11 @@ class LmdSiteThemeLayer(PloneSandboxLayer):
         z2.uninstallProduct(app, 'lmd.sitetheme')
 
 
-FIXTURE = LmdBuildoutLayer()
+FIXTURE = lmdBuildoutLayer()
 INTEGRATION_TESTING = IntegrationTesting(
-    bases=(FIXTURE,), name="LmdBuildoutLayer:Integration")
+    bases=(FIXTURE,), name="lmdBuildoutLayer:Integration")
 FUNCTIONAL_TESTING = FunctionalTesting(
-    bases=(FIXTURE,), name="LmdBuildoutLayer:Functional")
+    bases=(FIXTURE,), name="lmdBuildoutLayer:Functional")
 
 
 class IntegrationTestCase(unittest.TestCase):

@@ -1,0 +1,49 @@
+//
+// Navlist based on portlet-navigation
+// ------------------------------------------------------
+
+.app-card-nav {
+  .app-card-header {
+    display: none;
+  }
+  .app-card-main {
+    padding: 0;
+  }
+}
+
+.app-nav-list {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.app-nav-list-item {
+  margin-left: 0;
+  //padding: .5rem .25rem;
+  &:not(last) {
+    margin-bottom: 0;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.app-nav-list-link {
+  display: inline-block;
+  width: 100% !important;
+  color: #000;
+  padding: .5rem 1rem;
+  background: $app-primary-lighter;
+  font-size: .9rem;
+  &:hover {
+    color: #fff !important;
+    text-decoration: none;
+    background: $link-color;
+  }
+  &.navTreeCurrentNode {
+    color: #fff !important;
+    background: $link-color;
+  }
+  @include when-inside('.app-nav-list-item-active') {
+    color: #fff !important;
+    background: $link-color;
+  }
+}

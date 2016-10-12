@@ -15,7 +15,7 @@ How it works
 This package provides the scaffolding for a full featured Plone theme. It does
 setup a resource directory but does not provide the actual theme. The generation
 of the actual theme compontents is left to the more appropriate toolchain
-provided by state of the art frontend development.
+provided by state of the art frontend developlmdt.
 
 At the time of writing this does require the user to generate a theme
 infrastructure by running the `generator-diazotheme` via `yeoman` provided by

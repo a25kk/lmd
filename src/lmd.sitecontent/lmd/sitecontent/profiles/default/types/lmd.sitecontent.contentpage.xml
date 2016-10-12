@@ -12,8 +12,8 @@
   <property name="global_allow">False</property>
   <property name="filter_content_types">True</property>
   <property name="allowed_content_types">
-    <elelmdt value="lmd.sitecontent.contentpage" />
-    <elelmdt value="Image" />
+    <element value="lmd.sitecontent.contentpage" />
+    <element value="Image" />
   </property>
   <property name="allow_discussion">True</property>
 
@@ -22,10 +22,10 @@
   <property name="klass">lmd.sitecontent.contentpage.ContentPage</property>
 
   <property name="behaviors">
-     <elelmdt value="plone.app.content.interfaces.INameFromTitle" />
-     <elelmdt value="plone.app.dexterity.behaviors.metadata.IBasic"/>
-     <elelmdt value="plone.app.contenttypes.behaviors.richtext.IRichText" />
-    <elelmdt value="plone.app.contenttypes.behaviors.leadimage.ILeadImage" />
+     <element value="plone.app.content.interfaces.INameFromTitle" />
+     <element value="plone.app.dexterity.behaviors.metadata.IBasic"/>
+     <element value="plone.app.contenttypes.behaviors.richtext.IRichText" />
+    <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage" />
    </property>
 
   <!-- View information -->
@@ -33,7 +33,7 @@
   <property name="immediate_view">view</property>
   <property name="default_view">contentpage-view</property>
   <property name="view_methods">
-   <elelmdt value="contentpage-view"/>
+   <element value="contentpage-view"/>
   </property>
   <property name="default_view_fallback">False</property>
   <property name="add_permission">cmf.AddPortalContent</property>

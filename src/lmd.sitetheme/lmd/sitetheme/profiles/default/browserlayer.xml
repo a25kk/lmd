@@ -2,6 +2,6 @@
 <layers>
   <layer
     name="lmd.sitetheme"
-    interface="lmd.sitetheme.interfaces.ILmdSiteThemeLayer"
+    interface="lmd.sitetheme.interfaces.IlmdSiteThemeLayer"
   />
 </layers>

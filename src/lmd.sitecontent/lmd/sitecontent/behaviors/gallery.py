@@ -4,7 +4,7 @@ from plone.autoform.interfaces import IFormFieldProvider
 from plone.dexterity.interfaces import IDexterityContent
 from plone.supermodel import model
 from zope.component import adapter
-from zope.interface import implelmdter
+from zope.interface import implementer
 from zope.interface import provider
 from zope import schema
 
@@ -35,7 +35,7 @@ class IGalleryEnabled(model.Schema):
     )
 
 
-@implelmdter(IGalleryEnabled)
+@implementer(IGalleryEnabled)
 @adapter(IDexterityContent)
 class GalleryEnabled(object):
 
