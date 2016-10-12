@@ -23,7 +23,7 @@
                 <div class="app-intro">
                     <div class="app-intro-left">
                         <div class="app-intro-left-content">
-                            <img class="image-inline" src="{{ page.base_url }}assets/img/intro.jpg" />
+                            <img class="image-inline" src="assets/img/intro.jpg" />
                         </div>
                     </div>
                     <div class="app-intro-right">
