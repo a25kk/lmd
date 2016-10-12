@@ -6584,6 +6584,7 @@ pre code
 }
 
 .container,
+.app-header,
 .app-brandbar-content,
 .app-footer-cards,
 .app-copyright,
@@ -6600,6 +6601,7 @@ pre code
 @media (min-width: 576px)
 {
     .container,
+    .app-header,
     .app-brandbar-content,
     .app-footer-cards,
     .app-copyright,
@@ -6615,6 +6617,7 @@ pre code
 @media (min-width: 768px)
 {
     .container,
+    .app-header,
     .app-brandbar-content,
     .app-footer-cards,
     .app-copyright,
@@ -6630,6 +6633,7 @@ pre code
 @media (min-width: 992px)
 {
     .container,
+    .app-header,
     .app-brandbar-content,
     .app-footer-cards,
     .app-copyright,
@@ -6645,6 +6649,7 @@ pre code
 @media (min-width: 1200px)
 {
     .container,
+    .app-header,
     .app-brandbar-content,
     .app-footer-cards,
     .app-copyright,
@@ -13867,11 +13872,14 @@ http://flickity.metafizzy.co
     transition-delay: 1.8s;
 }
 
+body
+{
+    background-color: #d9d9bf;
+}
 body.template-theming-controlpanel .row
 {
     margin: 0 1rem;
 }
-
 .app-fonts-loaded body
 {
     font-weight: 300;
@@ -14379,7 +14387,7 @@ a:hover
     transition: background-color .5s ease;
     text-transform: uppercase;
 
-    color: #fff;
+    color: #ccc;
 }
 @media (min-width: 992px)
 {
@@ -15074,8 +15082,17 @@ textarea
 
 .app-brandname-logo
 {
+    float: right; 
+
     width: 300px;
-    margin: 1rem 1rem 0 2rem;
+    margin: 1rem 0 0 0;
+}
+.app-brandname-logo::after
+{
+    display: table;
+    clear: both; 
+
+    content: '';
 }
 
 .app-signin-header-content path
@@ -15488,7 +15505,7 @@ img[data-sizes='auto']
 {
     .app-banner-item
     {
-        min-height: 550px;
+        min-height: 400px;
     }
 }
 .app-banner-item-static
@@ -17102,7 +17119,7 @@ body.template-frontpage-view .app-pathbar
     .app-frontpage
     .app-page-title
     {
-        font-size: 2.9rem;
+        font-size: 2rem;
 
         margin-top: 2rem;
     }
@@ -18584,6 +18601,51 @@ article.vevent
 .event ul
 {
     list-style-position: inside;
+}
+
+.app-wrapper
+{
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    border-radius: .25rem;
+    background: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .75);
+}
+@media (min-width: 576px)
+{
+    .app-wrapper
+    {
+        width: 540px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px)
+{
+    .app-wrapper
+    {
+        width: 720px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 992px)
+{
+    .app-wrapper
+    {
+        width: 960px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 1200px)
+{
+    .app-wrapper
+    {
+        width: 1140px;
+        max-width: 100%;
+    }
 }
 
 .app-main

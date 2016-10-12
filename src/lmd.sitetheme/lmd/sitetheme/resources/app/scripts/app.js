@@ -1,9 +1,9 @@
 var font = new FontFaceObserver('Open Sans');
 font.load().then(function () {
-    doculmdt.doculmdtelement.className += " app-fonts-loaded";
+    document.documentElement.className += " app-fonts-loaded";
 });
-var $bannerBar = doculmdt.querySelectorAll('.app-js-carousel'),
-    $galleryContainer = doculmdt.querySelectorAll('.js-gallery');
+var $bannerBar = document.querySelectorAll('.app-js-carousel'),
+    $galleryContainer = document.querySelectorAll('.js-gallery');
 if ($bannerBar.length) {
     var bannerflkty = new Flickity('.app-js-carousel', {
         autoPlay: 7000,

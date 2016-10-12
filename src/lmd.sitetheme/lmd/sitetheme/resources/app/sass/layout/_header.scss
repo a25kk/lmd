@@ -4,7 +4,7 @@
 
 
 .app-header {
-
+    @extend .container;
 }
 
 .app-header-content-navbar {

@@ -5,6 +5,7 @@
 
 //** Adjust font weight for initialized webfonts
 body {
+    background-color: #d9d9bf;
     &.template-theming-controlpanel .row {
         // Fix theming control panel
         margin: 0 $spacer;

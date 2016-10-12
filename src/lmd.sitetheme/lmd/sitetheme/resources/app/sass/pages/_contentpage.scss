@@ -39,7 +39,7 @@
     font-size: 2rem;
     margin-top: 0rem;
     @include when-inside('.app-frontpage') {
-      font-size: 2.9rem;
+      font-size: 2rem;
       margin-top: 2rem;
     }
   }
