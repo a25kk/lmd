@@ -18,7 +18,6 @@
 }
 
 .app-intro-left {
-	border: 15px solid #ADA990;
 	@include make-col(12);
 	@include media-breakpoint-up(md) {
 		@include make-col(4);

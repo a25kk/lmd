@@ -118,22 +118,32 @@
         width: auto;
         @include media-breakpoint-up(lg) {
             background: transparent;
-            padding-left: 1rem;
-            padding-right: 1rem;
+            //padding-left: 1rem;
+            //padding-right: 1rem;
         }
         &:first-child {
             padding-left: 0;
+            a:before {
+                content: "";
+                display: inline;
+            }
         }
         &:last-child {
             padding-right: 0;
+        }
+        a:before {
+            content: "•";
+            display: inline;
+            //padding-left: .5rem;
+            padding-right: .5rem;
         }
     }
 }
 
 
 .app-navitem-tab {
-    padding-right: 0.25rem;
-    padding-left: 0.25rem;
+    //padding-right: 0.25rem;
+    //padding-left: 0.25rem;
     padding-bottom: 0.7rem;
     color: #ccc;
     text-transform: uppercase;
