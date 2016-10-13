@@ -13944,6 +13944,12 @@ a:hover
     color: #999474;
 }
 
+.app-header
+{
+    padding-right: 0; 
+    padding-left: 0;
+}
+
 .app-header-content-navbar
 {
     padding-top: .7rem; 
@@ -18586,7 +18592,9 @@ article.vevent
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
+    padding-right: 2rem;
     padding-left: 15px;
+    padding-left: 2rem;
 
     border-radius: .25rem;
     background: #fff;
@@ -18839,9 +18847,11 @@ article.vevent
 {
     .app-intro
     {
+        margin-right: 0;
         margin-bottom: 2rem;
-        padding-right: 1rem; 
-        padding-left: 1rem;
+        margin-left: 0;
+
+        background: #eee;
     }
 }
 
@@ -18864,7 +18874,7 @@ article.vevent
 }
 .app-intro-left .app-intro-left-content
 {
-    padding: 0 0 0 0;
+    padding: 1rem;
 }
 .app-intro-left img
 {
@@ -18884,9 +18894,7 @@ article.vevent
 {
     .app-intro-right
     {
-        max-width: 66.6666666667%;
-
-        border-left: 16px solid #fff; 
+        max-width: 66.6666666667%; 
 
         -ms-flex: 0 0 66.6666666667%;
             flex: 0 0 66.6666666667%;
@@ -18895,7 +18903,7 @@ article.vevent
 .app-intro-right .app-intro-right-content
 {
     min-height: 100%;
-    padding: 2rem;
+    padding: 1rem;
 
     color: #000; 
     background: #eee;
