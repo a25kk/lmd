@@ -37,7 +37,7 @@
             </a>
           </h2>
 
-          <div metal:use-macro="context/@@listing_view/macros/doculmdt_byline"></div>
+          <div metal:use-macro="context/@@listing_view/macros/document_byline"></div>
 
           <p class="tileBody" tal:condition="item_description">
             <span class="description" tal:content="item_description">

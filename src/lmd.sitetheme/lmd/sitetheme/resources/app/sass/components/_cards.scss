@@ -180,7 +180,7 @@ $card-title-spacers: (
     background: transparent no-repeat scroll top center;
     background-size: cover;
     overflow: hidden;
-    min-height: 370px;
+    min-height: 340px;
     transition: all 0.2s linear;
     &-01 {
         background-image: url("../assets/img/card-01-bg.jpg");
@@ -190,24 +190,6 @@ $card-title-spacers: (
     }
     &-03 {
         background-image: url("../assets/img/card-03-bg.jpg");
-    }
-    &-04 {
-        background-image: url("../assets/img/card-04-bg.jpg");
-    }
-    &-05 {
-        background-image: url("../assets/img/card-05-bg.jpg");
-    }
-    &-06 {
-        background-image: url("../assets/img/card-06-bg.jpg");
-    }
-    &-07 {
-        background-image: url("../assets/img/card-07-bg.jpg");
-    }
-    &-08 {
-        background-image: url("../assets/img/card-08-bg.jpg");
-    }
-    &-09 {
-        background-image: url("../assets/img/card-09-bg.jpg");
     }
 }
 .app-card-cover {
@@ -227,7 +209,7 @@ $card-title-spacers: (
     background: transparent no-repeat scroll top center;
     background-size: cover;
     width: 100%;
-    min-height: 370px;
+    min-height: 340px;
 }
 .app-card-caption-content {
     display: block;
@@ -248,6 +230,7 @@ $card-title-spacers: (
         height: 40px;
         font-size: 2rem;
         font-weight: 700;
+        padding-top: .3rem;
     }
 }
 .app-card-caption {

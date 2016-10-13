@@ -16154,7 +16154,7 @@ body.template-frontpage-view .app-pathbar
 
     overflow: hidden;
 
-    min-height: 370px;
+    min-height: 340px;
 
     transition: all .2s linear; 
 
@@ -16172,30 +16172,6 @@ body.template-frontpage-view .app-pathbar
 .app-card-bg-03
 {
     background-image: url('../assets/img/card-03-bg.jpg');
-}
-.app-card-bg-04
-{
-    background-image: url('../assets/img/card-04-bg.jpg');
-}
-.app-card-bg-05
-{
-    background-image: url('../assets/img/card-05-bg.jpg');
-}
-.app-card-bg-06
-{
-    background-image: url('../assets/img/card-06-bg.jpg');
-}
-.app-card-bg-07
-{
-    background-image: url('../assets/img/card-07-bg.jpg');
-}
-.app-card-bg-08
-{
-    background-image: url('../assets/img/card-08-bg.jpg');
-}
-.app-card-bg-09
-{
-    background-image: url('../assets/img/card-09-bg.jpg');
 }
 
 .app-card-cover
@@ -16219,7 +16195,7 @@ body.template-frontpage-view .app-pathbar
     left: 0;
 
     width: 100%;
-    min-height: 370px; 
+    min-height: 340px; 
 
     background: transparent no-repeat scroll top center;
     background-size: cover;
@@ -16246,7 +16222,7 @@ body.template-frontpage-view .app-pathbar
 .app-card-caption-content:before
 {
     font-size: 2rem;
-    font-weight: 700; 
+    font-weight: 700;
 
     position: absolute;
     top: 0;
@@ -16256,6 +16232,7 @@ body.template-frontpage-view .app-pathbar
 
     width: 40px;
     height: 40px;
+    padding-top: .3rem; 
 
     content: '\203A';
 }
@@ -18585,9 +18562,52 @@ article.vevent
     list-style-position: inside;
 }
 
+.app-outer-wrapper
+{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    border-radius: 0; 
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25);
+}
+@media (min-width: 576px)
+{
+    .app-outer-wrapper
+    {
+        width: 540px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px)
+{
+    .app-outer-wrapper
+    {
+        width: 720px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 992px)
+{
+    .app-outer-wrapper
+    {
+        width: 960px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 1200px)
+{
+    .app-outer-wrapper
+    {
+        width: 1140px;
+        max-width: 100%;
+    }
+}
+
 .app-wrapper
 {
-    margin-top: 1rem;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
