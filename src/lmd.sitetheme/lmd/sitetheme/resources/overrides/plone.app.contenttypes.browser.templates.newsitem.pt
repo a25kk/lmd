@@ -49,7 +49,7 @@
                    parent context_state/parent;
                    parent_url parent/absolute_url">
          <a href="" tal:attributes="href parent_url">
-           &laquo; zur&uuml;ck zur <span tal:content="parent/Title" /></a>
+           &laquo; zur&uuml;ck zu <span tal:content="parent/Title" /></a>
   </div>
 
 </metal:content-core>
