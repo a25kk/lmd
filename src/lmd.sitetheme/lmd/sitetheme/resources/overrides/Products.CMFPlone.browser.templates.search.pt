@@ -57,10 +57,10 @@
           </span>
         </div>
 
-        <dl class="actionlmdu"
-            tal:attributes="class python:view.show_advanced_search() and 'actionlmdu activated' or 'actionlmdu'">
+        <dl class="actionmenu"
+            tal:attributes="class python:view.show_advanced_search() and 'actionmenu activated' or 'actionmenu'">
 
-          <dt class="actionlmduHeader">
+          <dt class="actionmenuHeader">
             <input type="hidden" id="advanced-search-input" name="advanced_search"
                    tal:attributes="value python: view.show_advanced_search() and 'True' or 'False'" />
             <button
@@ -69,7 +69,7 @@
                   Filter the results
             </button>
           </dt>
-          <dd class="actionlmduContent">
+          <dd class="actionmenuContent">
             <div id="search-filter" i18n:domain="plone">
               <fieldset class="noborder">
                 <legend i18n:translate="label_item_type">Item type</legend>
@@ -149,12 +149,12 @@
 
         <div>
           <div>
-            <h1 class="doculmdtFirstHeading"
+            <h1 class="documentFirstHeading"
                 i18n:translate=""
                 tal:condition="not:st">
               Search results
             </h1>
-            <h1 class="doculmdtFirstHeading"
+            <h1 class="documentFirstHeading"
                 i18n:translate=""
                 tal:condition="st">
               Search results for
@@ -237,7 +237,7 @@
                               </span>
                               <span class="discreet" i18n:domain="plone"
                                     tal:condition="show_about">
-                                <span class="doculmdtAuthor"
+                                <span class="documentAuthor"
                                       i18n:translate="label_by_author">
                                   by
                                   <tal:block tal:condition="item/Creator"
@@ -254,7 +254,7 @@
                                 <span tal:define="publication_date item/EffectiveDate;
                                                   modification_date item/ModificationDate">
 
-                                  <span class="doculmdtPublished" tal:condition="python: publication_date != 'None'">
+                                  <span class="documentPublished" tal:condition="python: publication_date != 'None'">
                                     &mdash;
                                     <span i18n:translate="box_published">
                                       published
@@ -264,7 +264,7 @@
                                     </span>
                                   </span>
 
-                                  <span class="doculmdtModified" tal:condition="python: modification_date != publication_date">
+                                  <span class="documentModified" tal:condition="python: modification_date != publication_date">
                                     &mdash;
                                     <span i18n:translate="box_last_modified">
                                       last modified
@@ -291,7 +291,7 @@
                                 Cropped description
                               </p>
 
-                              <cite class="doculmdtLocation link-location"
+                              <cite class="documentLocation link-location"
                                     tal:define="breadcrumbs python: view.breadcrumbs(item);
                                                 is_rtl context/@@plone_portal_state/is_rtl;"
                                     tal:condition='breadcrumbs'>
