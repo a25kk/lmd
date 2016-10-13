@@ -154,7 +154,7 @@
     transition: background-color 0.5s ease;
     font-size: .8rem;
      @include media-breakpoint-up(xl) {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
      }
     &:hover {
         color: $app-danger;
