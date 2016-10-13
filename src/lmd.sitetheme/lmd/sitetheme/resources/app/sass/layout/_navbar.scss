@@ -73,7 +73,8 @@
     font-size: $font-size-lg;
     line-height: 1;
     background: none;
-    color: #fff;
+    color: $app-danger;
+    background: $app-gray;
     border: $border-width solid transparent;
     @include border-radius($btn-border-radius);
 
@@ -96,10 +97,9 @@
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 0;
-    padding: 1rem;
+    padding: 0;
     list-style: none;
     @include media-breakpoint-up(sm) {
-        padding: 0;
         flex-wrap: nowrap;
     }
     @extend .clearfix;
@@ -113,8 +113,9 @@
 //## Color coded based on addon classes
 .app-navitem {
     width: 100%;
+    padding-bottom: 1rem;
     @include media-breakpoint-up(md) {
-        //width: 16.66666667%;
+        padding-bottom: 0;
         width: auto;
         @include media-breakpoint-up(lg) {
             background: transparent;
@@ -144,18 +145,19 @@
 .app-navitem-tab {
     //padding-right: 0.25rem;
     //padding-left: 0.25rem;
-    padding-bottom: 0.7rem;
-    color: #ccc;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: $app-secondary-dark;
     text-transform: uppercase;
     font-weight: 300;
     line-height: 1;
     transition: background-color 0.5s ease;
-    font-size: 1rem;
-     @include media-breakpoint-up(lg) {
+    font-size: .8rem;
+     @include media-breakpoint-up(xl) {
         font-size: 1.4rem;
      }
     &:hover {
-        color: $app-secondary-dark;
+        color: $app-danger;
         background-color: transparent;
         text-decoration: none;
     }
@@ -168,13 +170,8 @@
         display: flex;
     }
     @include when-inside('.active') {
-        color: $app-secondary-dark;
+        color: $app-danger;
         background-color: transparent;
         text-decoration: none;
     }
-}
-
-
-#portaltab-spiritualitaet {
-    background: none;
 }

@@ -14269,9 +14269,10 @@ a:hover
 
     padding: .5rem .75rem;
 
-    color: #fff;
+    color: #e14243;
     border: 1px solid transparent; 
     background: none;
+    background: whitesmoke;
 }
 .navbar-toggler:focus,
 .navbar-toggler:hover
@@ -14286,7 +14287,7 @@ a:hover
         flex-direction: row;
 
     margin-bottom: 0;
-    padding: 1rem;
+    padding: 0;
 
     list-style: none; 
 
@@ -14300,8 +14301,6 @@ a:hover
 {
     .app-navbar-nav
     {
-        padding: 0;
-
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
     }
@@ -14318,12 +14317,14 @@ a:hover
 .app-navitem
 {
     width: 100%;
+    padding-bottom: 1rem;
 }
 @media (min-width: 768px)
 {
     .app-navitem
     {
-        width: auto;
+        width: auto; 
+        padding-bottom: 0;
     }
 }
 @media (min-width: 768px) and (min-width: 992px)
@@ -14361,18 +14362,19 @@ a:hover
 
 .app-navitem-tab
 {
-    font-size: 1rem; 
+    font-size: .8rem; 
     font-weight: 300;
     line-height: 1;
 
-    padding-bottom: .7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
     transition: background-color .5s ease;
     text-transform: uppercase;
 
-    color: #ccc;
+    color: #535353;
 }
-@media (min-width: 992px)
+@media (min-width: 1200px)
 {
     .app-navitem-tab
     {
@@ -14383,7 +14385,7 @@ a:hover
 {
     text-decoration: none; 
 
-    color: #535353;
+    color: #e14243;
     background-color: transparent;
 }
 .app-navitem-tab > span
@@ -14405,18 +14407,13 @@ a:hover
 {
     text-decoration: none; 
 
-    color: #535353;
+    color: #e14243;
     background-color: transparent;
-}
-
-#portaltab-spiritualitaet
-{
-    background: none;
 }
 
 .app-footer-content
 {
-    font-size: .875rem;
+    font-size: .8rem;
 
     min-height: 280px;
 
@@ -14437,7 +14434,7 @@ a:hover
 
 .app-footer-header
 {
-    font-size: 1.2rem;
+    font-size: .8rem;
     font-weight: 500;
 
     margin-bottom: 1rem;
@@ -14479,11 +14476,10 @@ a:hover
 
 .app-copyright
 {
-    font-weight: 500; 
+    font-size: .8rem; 
+    font-weight: 500;
 
-    padding: 0 2rem;
-
-    text-transform: uppercase;
+    padding: 1rem 0;
 }
 @media (min-width: 768px)
 {
@@ -14605,7 +14601,7 @@ textarea
 
     margin: -3px 0 0 12px;
 
-    color: #999474;
+    color: #e14243;
 }
 
 ::-ms-reveal,
@@ -15047,10 +15043,6 @@ textarea
     margin-left: 0;
 }
 
-.app-brand
-{
-    margin-right: 1rem;
-}
 .app-brand-panel-inverse
 {
     width: 100%;
@@ -15065,17 +15057,23 @@ textarea
 
 .app-brandname-logo
 {
-    float: right; 
-
-    width: 300px;
-    margin: 1rem 0 0 0;
+    margin: 1rem 1rem 0 1rem;
 }
-.app-brandname-logo::after
+@media (min-width: 768px)
 {
-    display: table;
-    clear: both; 
+    .app-brandname-logo
+    {
+        float: right; 
 
-    content: '';
+        width: 300px;
+    }
+    .app-brandname-logo::after
+    {
+        display: table;
+        clear: both; 
+
+        content: '';
+    }
 }
 
 .app-signin-header-content path
@@ -15500,16 +15498,18 @@ img[data-sizes='auto']
 }
 .app-banner-item-static .app-banner-item-title
 {
+    font-size: 1rem; 
+
     padding-bottom: 1rem;
     padding-left: 1rem;
 }
-@media (min-width: 992px)
+@media (min-width: 1200px)
 {
     .app-banner-item-static .app-banner-item-title
     {
         font-size: 2rem; 
 
-        padding-left: 0;
+        padding-left: 2rem;
     }
 }
 
@@ -15593,6 +15593,7 @@ img[data-sizes='auto']
     font-weight: 300;
 
     padding-top: 5rem;
+    padding-bottom: 2rem;
 
     text-transform: uppercase; 
 
@@ -18637,8 +18638,10 @@ article.vevent
 {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px; 
+    padding-right: 15px;
+    padding-right: 0; 
     padding-left: 15px;
+    padding-left: 0;
 }
 @media (min-width: 576px)
 {
@@ -18670,6 +18673,14 @@ article.vevent
     {
         width: 1140px;
         max-width: 100%;
+    }
+}
+@media (min-width: 576px)
+{
+    .app-main
+    {
+        padding-right: 1rem; 
+        padding-left: 1rem;
     }
 }
 
@@ -18760,8 +18771,7 @@ article.vevent
 {
     .app-content-main-full
     {
-        max-width: 100%;
-        padding: 0 1rem 0 0; 
+        max-width: 100%; 
 
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;

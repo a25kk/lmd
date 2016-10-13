@@ -5,7 +5,7 @@
 
 // Make a gridrow
 .app-brand {
-    margin-right: $spacer;
+    //margin-right: $spacer;
     &-panel-inverse {
         width: 100%;
     }
@@ -19,10 +19,12 @@
 }
 
 .app-brandname-logo {
-    width: 300px;
-    margin: 1rem 0 0 0;
-    float: right;
-    @include clearfix;
+    margin: 1rem 1rem 0 1rem;
+    @include media-breakpoint-up(md) {
+        width: 300px;
+        float: right;
+        @include clearfix;
+    }
 }
 
 .app-signin-header-content {

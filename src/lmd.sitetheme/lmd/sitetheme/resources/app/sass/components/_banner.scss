@@ -40,8 +40,9 @@
       @extend.container;
       padding-bottom: 1rem;
       padding-left: 1rem;
-      @include media-breakpoint-up(lg) {
-        padding-left: 0;
+      font-size: 1rem;
+      @include media-breakpoint-up(xl) {
+        padding-left: 2rem;
         font-size: 2rem;
       }
     }
@@ -80,6 +81,7 @@
 .app-banner-item-title {
   font-size: 1.5rem;
   padding-top: 5rem;
+  padding-bottom: 2rem;
   color: #fff;
   font-weight: 300;
   text-transform: uppercase;

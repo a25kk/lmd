@@ -8,7 +8,7 @@
     @include gradient-y($app-secondary, $app-primary, 0%, 100%);
     min-height: 280px;
     color: #000;
-    font-size: $font-size-sm;
+    font-size: .8rem;
     background-image: url("../assets/img/map.jpg");
     background-size: cover;
 }
@@ -23,7 +23,7 @@
 .app-footer-header {
     margin-bottom: 1rem;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: .8rem;
     font-weight: 500;
     color: #fff;
 }
@@ -54,9 +54,9 @@
 
 .app-copyright {
     @extend .container;
-    padding: 0 2rem;
-    text-transform: uppercase;
+    padding: 1rem 0;
     font-weight: 500;
+    font-size: .8rem;
     @include media-breakpoint-up(md) {
         text-align: center;
     }
