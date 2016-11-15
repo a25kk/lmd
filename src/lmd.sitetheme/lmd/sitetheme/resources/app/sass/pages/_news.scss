@@ -32,14 +32,25 @@
 // Listing
 
 .app-news-wrapper {
-  @include make-row();
-  padding: 1rem;
-  .app-news-left {
-      @include make-col(12);
-  }
-  .app-news-right {
-      @include make-col(12);
-  }
+    @include make-row();
+    padding: 1rem;
+        .app-news-left {
+            @include make-col(12);
+            margin-bottom: 1rem;
+            @include media-breakpoint-up(sm) {
+            @include make-col(4);
+            margin-bottom: 0;
+            padding: 1rem 1rem 1rem 0;
+            }
+        }
+
+        .app-news-right {
+            @include make-col(12);
+            @include media-breakpoint-up(sm) {
+            @include make-col(8);
+            padding: 1rem;
+        }
+    }
 }
 
 .app-summary-wrapper {
