@@ -5,7 +5,8 @@
 
 //** Adjust font weight for initialized webfonts
 body {
-    background-color: #d9d9bf;
+    //background-color: #d9d9bf;
+    background: transparent url("../assets/img/wood.png") repeat scroll center center;
     &.template-theming-controlpanel .row {
         // Fix theming control panel
         margin: 0 $spacer;

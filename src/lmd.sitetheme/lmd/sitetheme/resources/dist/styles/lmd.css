@@ -13874,7 +13874,7 @@ http://flickity.metafizzy.co
 
 body
 {
-    background-color: #d9d9bf;
+    background: transparent url('../assets/img/wood.png') repeat scroll center center;
 }
 body.template-theming-controlpanel .row
 {
