@@ -15470,9 +15470,17 @@ img[data-sizes='auto']
 
 .app-banner
 {
-    overflow: hidden; 
+    display: none;
+}
+@media (min-width: 576px)
+{
+    .app-banner
+    {
+        display: block;
+        overflow: hidden; 
 
-    background: transparent;
+        background: transparent;
+    }
 }
 
 /* ---- Single banner item ---- */

@@ -6,8 +6,13 @@
 }
 
 .app-banner {
-    background: transparent;
-    overflow: hidden;
+  display: none;
+    @include media-breakpoint-up(sm) {
+      display: block;
+      background: transparent;
+      overflow: hidden;
+    }
+    
 }
 
 /* ---- Single banner item ---- */
