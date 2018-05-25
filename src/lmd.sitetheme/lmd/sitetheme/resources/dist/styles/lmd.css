@@ -15554,6 +15554,11 @@ a:hover
     background-color: #000;
 }
 
+iframe
+{
+    border: none;
+}
+
 .app-default
 {
     color: #999474;
