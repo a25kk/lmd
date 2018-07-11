@@ -17113,7 +17113,7 @@ img[data-sizes='auto']
 {
     .app-banner-item-body
     {
-        padding: 0 2rem; 
+        padding: 0 2rem 2rem 2rem; 
 
         text-align: left;
     }
@@ -17123,8 +17123,6 @@ img[data-sizes='auto']
 {
     font-size: 1.5rem;
     font-weight: 300;
-
-    padding-top: 5rem;
 
     text-transform: uppercase; 
 
@@ -17171,6 +17169,16 @@ img[data-sizes='auto']
 .app-banner-text a
 {
     color: #fff;
+}
+
+.app-banner__action--link
+{
+    color: #e14243;
+}
+
+.app-banner__action--button
+{
+    color: #e14243;
 }
 
 /* ---- flickity overrides ---- */

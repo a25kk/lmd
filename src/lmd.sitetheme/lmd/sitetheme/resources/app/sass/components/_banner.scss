@@ -77,14 +77,14 @@
   bottom: 0;
   @include media-breakpoint-up(md) {
     text-align: left;
-    padding: 0 2rem;
+    padding: 0 2rem 2rem 2rem;
 
   }
 }
 
 .app-banner-item-title {
   font-size: 1.5rem;
-  padding-top: 5rem;
+  //padding-top: 3rem;
   color: #fff;
   font-weight: 300;
   text-transform: uppercase;
@@ -117,6 +117,14 @@
   a {
     color: #fff;
   }
+}
+
+.app-banner__action--link {
+  color: $app-danger;
+}
+
+.app-banner__action--button {
+  color: $app-danger;
 }
 
 /* ---- flickity overrides ---- */
