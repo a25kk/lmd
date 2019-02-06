@@ -15522,7 +15522,7 @@ a:hover
 {
     transition: color .5s linear;
 
-    color: #999;
+    color: #e14243;
 }
 
 .hidden,
@@ -17173,12 +17173,12 @@ img[data-sizes='auto']
 
 .app-banner__action--link
 {
-    color: #e14243;
+    color: #fff;
 }
 
 .app-banner__action--button
 {
-    color: #e14243;
+    color: #fff;
 }
 
 /* ---- flickity overrides ---- */
