@@ -21,14 +21,9 @@
 
             <div class="app-page-body app-fp app-fp-1" id="app-frontpage-1">
                 <div class="app-intro">
-                    <div class="app-intro-left">
+
                         <div class="app-intro-left-content">
-                            <img class="image-inline" src="assets/img/intro.jpg" />
-                        </div>
-                    </div>
-                    <div class="app-intro-right">
-                        <div class="app-intro-right-content">
-                                <p>Unsere Landmetzgerei Dichtl befindet sich seit 1933 in Familienbesitz und liegt in Gessertshausen, bei Augsburg inmitten des Naturparks westliche Wälder.</p>
+                            <p>Unsere Landmetzgerei Dichtl befindet sich seit 1933 in Familienbesitz und liegt in Gessertshausen, bei Augsburg inmitten des Naturparks westliche Wälder.</p>
                                 <p>Mit stets frischen Produkten und neuen Ideen, begeistern wir seit jeher unsere Kunden aus nah und fern. Ab sofort, nicht nur in unserer Metzgerei, sondern auch hier im Internet sind wir immer gerne für Sie da. - Schauen Sie sich deshalb in Ruhe um und scheuen Sie sich nicht, uns bei Fragen, Wünschen oder Anregungen anzurufen oder per e-Mail zu kontaktieren.</p>
                                 <p>Schauen Sie doch einfach einmal bei uns vorbei. Wir freuen uns auf Ihren Besuch hier im Schwäbischen Pfaffenwinkel der Stauden.</p>
 
@@ -37,6 +32,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="embed-responsive embed-responsive-16by9"><iframe src="https://www.youtube.com/embed/AM_9pPo2jls" height="150" class="embed-responsive-item" width="300"></iframe></div>
 
             </div>
         </div>
