@@ -1,0 +1,93 @@
+//
+// Frontpage NewsItems listing
+// -----------------------------------------
+
+.app-news-panel-wrapper {
+    padding: 0;
+}
+
+.app-news-panel-header {
+    @include make-container;
+}
+
+// News listing
+.app-news-list {
+    display: block;
+    @include make-container();
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    @include media-breakpoint-up(sm) {
+        padding-left: $spacer;
+        padding-right: $spacer;
+    }
+
+}
+
+.app-news-list-item {
+    @include media-breakpoint-up(sm) {
+        @include make-row();
+    }
+    margin-bottom: $spacer;
+}
+
+.app-news-list-item-aside,
+.app-news-list-item-main {
+    @include media-breakpoint-up(sm) {
+        @include make-col(12);
+    }
+}
+
+.app-news-list-item-aside {
+    @include media-breakpoint-up(sm) {
+        @include make-col(4);
+        padding-left: 0;
+    }
+    //padding-right: ($spacer * 6);
+}
+
+.app-news-list-item-main {
+    padding: 1rem 1rem 1rem;
+    background-color: $app-gray;
+    @include media-breakpoint-up(sm) {
+        @include make-col(8);
+        padding: 2rem 1rem 1rem;
+    }
+}
+
+// News image anchor item
+.app-news-list-item-anchor {
+    display: block;
+}
+
+
+.app-news-list-item-title {
+    font-size: 1.2rem;
+    a {
+        color: $app-primary;
+        font-weight: 700;
+    }
+}
+
+.app-news-list-item-abstract {
+
+}
+
+.app-news-list-item-actions {
+    text-align: right;
+    @include media-breakpoint-up(md) {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        }
+
+    a {
+        color: $app-primary;
+    }
+
+}
+
+.app-news-list-link {
+    color: $app-primary;
+}

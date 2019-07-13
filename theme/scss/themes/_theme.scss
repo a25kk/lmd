@@ -1,0 +1,87 @@
+//
+// Main site theme
+// --------------------------------------
+//== Main content area
+//
+//## Provides optional fullscreen layouts
+
+.app-outer-wrapper {
+  @include make-container();
+  @include make-container-max-widths();
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+  padding: 1rem;
+  border-radius: 0;
+}
+
+.app-wrapper {
+  @include make-container();
+  @include make-container-max-widths();
+  border-radius: $border-radius;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  }
+.app-main {
+  @include make-container();
+  @include make-container-max-widths();
+  padding-left: 0;
+  padding-right: 0;
+  @include media-breakpoint-up(sm) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.app-content {
+    @include make-row();
+}
+
+//** Add full height to layout components
+.app-content-aside,
+.app-content-main {
+    @include make-col(12)
+}
+
+.app-content-aside {
+    @include media-breakpoint-up(md) {
+        @include make-col(3);
+        padding: 0 1rem 1rem 0rem;
+    }
+}
+
+.app-content-main {
+  // padding: 0 1rem 0 1rem;
+  &-sm {
+    @include media-breakpoint-up(md) {
+      @include make-col(9);
+    }
+  }
+}
+
+.app-content-main-full {
+  @include make-col(12);
+    @include media-breakpoint-up(md) {
+        @include make-col(12);
+        //padding: 0 1rem 0 0;
+    }
+}
+
+.app-aside {
+  flex: 0 0 100%;
+    @include media-breakpoint-up(sm) {
+        flex: 0 0 15rem;
+        width: 15rem;
+        padding: 1rem 1rem 1rem 0;
+        &-inverse {
+          position: absolute;
+          top: 0;
+          right: 0;
+          border: 1px solid blue;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    {% include base/head.html %}
+  </head>
+  <body>
+    <div class="app-outer-wrapper">
+    <div class="app-wrapper">
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    {% include components/toolbar.html %}
+
+    {% include layout/header.html %}
+
+    <main class="app-main" role="main">
+        <section class="app-content">
+            <aside class="app-content-aside" id="app-content-aside">
+                {% include layout/sidebar.html %}
+            </aside>
+            <article class="app-content-main" id="app-content-main">
+                {{ content }}
+                {% include components/frontpage-cards.html %}
+            </article>
+        </section>
+    </main>
+
+    {% include layout/footer.html %}
+    {% include base/javascript.html %}
+     <div>
+        {% include base/piwik.html %}
+    </div>
+    </div>
+  </div>
+  </body>
+</html>

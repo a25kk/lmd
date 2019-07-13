@@ -1,0 +1,57 @@
+.app-top {
+	background: $app-primary;
+	padding-top: 1rem;
+}
+
+//.app-frontpage {
+//	width: 100%;
+//	padding: 0;
+//}
+
+.app-intro {
+	@include make-row();
+	@include media-breakpoint-up(md) {
+		margin-bottom: 2rem;
+		margin-left: 0;
+		margin-right: 0;
+		background: #eee;
+		//padding-left: 2rem;
+		//padding-right: 2rem;
+	}
+}
+
+.app-intro-left {
+	@include make-col(12);
+	@include media-breakpoint-up(md) {
+		@include make-col(4);
+	}
+	.app-intro-left-content {
+		//background: #eee;
+		padding: 1rem;
+
+	}
+	img {
+		width: 100%;
+	}
+}
+
+.app-intro-right {
+	line-height: 1.4rem;
+	@include make-col(12);
+	@include media-breakpoint-up(md) {
+		@include make-col(8);
+		//border-left: 16px solid #fff;
+		//border-right: 16px solid #fff;
+		//padding-right: 0;
+		//padding-left: 0;
+	}
+	.app-intro-right-content {
+		background: #eee;
+		min-height: 100%;
+		padding: 1rem;
+		color: #000;
+		a {
+			color: $app-primary;
+		}
+	}
+}

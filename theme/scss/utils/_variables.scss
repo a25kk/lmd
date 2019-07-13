@@ -1,0 +1,52 @@
+//
+// Application settings and variables
+// -------------------------------------------------
+
+
+//== Colors
+//
+//## Brand colors used across the project
+//## See: http://chir.ag/projects/name-that-color/#CBC843
+$color-gurkha:                rgba(153, 148, 116, 1) !default; // #999474
+$color-dim-gray:             rgba(102, 102, 102, 1) !default; // #666666
+
+// Gray baseline
+$app-gray:                    rgba(245, 245, 245, 1);
+$app-gray-dark:               rgba(153, 153, 153, 1); // #999999
+
+//** Primary brand color
+$app-primary-base:              $color-gurkha !default;
+$app-primary-darker:            darken($app-primary-base, 15%)  !default;
+$app-primary-dark:              darken($app-primary-base, 7.5%) !default;
+$app-primary:                   $app-primary-base               !default; // #7dc4c3
+$app-primary-light:             lighten($app-primary-base, 7.5%) !default;
+$app-primary-lighter:           lighten($app-primary-base, 25%) !default;
+
+//** Secondary brand color
+$app-secondary-base:              $color-dim-gray !default;
+$app-secondary-darker:            darken($app-secondary-base, 15%)  !default;
+$app-secondary-dark:              darken($app-secondary-base, 7.5%) !default;
+$app-secondary:                   $app-secondary-base               !default; // #d5edf9
+$app-secondary-light:             lighten($app-secondary-base, 7.5%) !default;
+$app-secondary-lighter:           lighten($app-secondary-base, 15%) !default;
+
+
+//** Brand primary color schema used as default
+$app-default:                 $app-primary-base;
+
+// Ionicons
+$ionicons-font-path:            "../assets/fonts";
+
+$btn-primary-bg:                 $app-primary !default;
+$btn-primary-border:             $app-primary !default;
+
+$font-size-h1: 2.5rem !default;
+$font-size-h2: 1.5rem !default;
+$font-size-h3: 1.25rem !default;
+$font-size-h4: 1rem !default;
+$font-size-h5: 0.8rem !default;
+$font-size-h6: 0.6rem !default;
+
+// Brand danger
+$app-danger:                    #e14243;
+

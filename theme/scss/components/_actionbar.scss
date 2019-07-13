@@ -1,0 +1,95 @@
+//
+// Actionbar
+// -------------------------------------
+
+.app-actionbar {
+  margin-top: .5rem;
+
+}
+
+.app-actions {
+  flex: 1;
+  font-size: 0.85rem;
+  width: 100%;
+
+  .btn-group {
+    width: 100%;
+  }
+}
+
+.app-action {
+  flex: 1;
+  padding: .5rem .25rem;
+  color: #fff;
+  background: $app-secondary;
+  text-align: center;
+  &:nth-child(even) {
+    color: #fff;
+    background: $app-secondary;
+  }
+}
+
+.app-action-search {
+  flex: 1;
+  color: $app-primary;
+  background: $app-gray;
+  margin-bottom: .5rem;
+}
+
+.app-searchbox-group {
+  display: flex;
+}
+
+.app-searchbox-control {
+  display: flex;
+}
+
+.app-searchbox-field {
+  @extend .form-control;
+  width: 75%;
+  background-color: $app-gray;
+  border-color: $app-gray;
+    &::placeholder {
+        color: $app-primary;
+        // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+        opacity: 1;
+    }
+}
+
+.app-searchbox-btn {
+  width: 25%;
+  @include button-variant(#fff, $app-secondary, $app-secondary);
+  .fa {
+    margin: 0 auto;
+  }
+}
+
+.app-action-left {
+  width: 75%;
+  text-align: left;
+}
+
+.dropdown-lmdu {
+    padding: 1rem;
+    font-size: .9rem;
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+  }
+
+.app-action-right {
+  width: 25%;
+  background: $app-secondary;
+  color: #fff;
+}
+
+.app-languageselector {
+  a {
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
